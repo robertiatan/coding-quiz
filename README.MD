@@ -18,7 +18,7 @@
 
 ### Here is a short clip showcasing the functionality of the application:
 
-![Gif showing functionality of application](assets/Images/Coding%20Quiz%20Preview%20Gif.gif)
+![Gif showing functionality of application](assets/Images/Coding%20Quiz%20Preview.gif)
 
 ### This is a link to the GitHub repository:
 https://github.com/robertiatan/coding-quiz
