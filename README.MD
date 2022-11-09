@@ -21,5 +21,7 @@ THEN I can save my initials and score
 ![Gif showing functionality of application](assets/Images/Coding%20Quiz%20Preview%20Gif.gif)
 
 ### This is a link to the GitHub repository:
+https://github.com/robertiatan/coding-quiz
 
 ### This is a link to the deployed GitHub pages URL:
+https://robertiatan.github.io/coding-quiz/ 
