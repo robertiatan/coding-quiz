@@ -1,0 +1,52 @@
+:root {
+  --font-primary: Verdana, "Geneva", Tahoma, sans-serif;
+  --font-secondary: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  --grey: rgba(128, 128, 128, 0.39);
+  --lightblue: rgba(0, 204, 255, 0.76);
+}
+
+body {
+  background-image: url(../assets/Images/wmf4pf98d4l61.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  color: var(--lightblue);
+  font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  font-family: var(--font-secondary);
+  color: var(--lightblue);
+  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  font-family: var(--font-secondary);
+  display: block;
+  margin: auto;
+  text-align: center;
+  background: var(--lightblue);
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  color: var(--lightblue);
+  background-color: var(--grey);
+}

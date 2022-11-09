@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="reset" type="text/css" href="assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>Coding Quiz</title>
+  </head>
+  <body>
+    <header>
+      <!--leader board button-->
+      <div class="header">
+        <a href="leaderboard.html">View Leader Board</a>
+      </div>
+      <!--timer-->
+      <div>
+        <p class="timer" id="timer">Time Left:</p>
+      </div>
+    </header>
+
+    <main>
+      <!--landing page-->
+      <section class="landing-page" id="landing-page">
+        <div id="landing">
+          <h1>Coding Quiz Challenge</h1>
+          <p id="instructions">
+            Answer these code related questions within the provided time limit.
+            Any incorrect answer will remove 5 seconds off of your timer so try
+            to be quick and correct! Remember you can input your initials at the
+            end to keep track of your scores.
+          </p>
+          <button class="button" id="start-button">Start</button>
+        </div>
+      </section>
+
+      <!--question page-->
+      <section class="question-page" id="question-page">
+        <div>
+          <h2 id="question">Question</h2>
+          <ul>
+            <li>
+              <button class="choices-btn" id="a-btn1" value="a"></button>
+            </li>
+            <li>
+              <button class="choices-btn" id="a-btn2" value="b"></button>
+            </li>
+            <li>
+              <button class="choices-btn" id="a-btn3" value="c"></button>
+            </li>
+            <li>
+              <button class="choices-btn" id="a-btn4" value="d"></button>
+            </li>
+          </ul>
+          <div id="q-check">
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <!--submitting scores page-->
+      <section class="submit-page" id="submit-page">
+        <div>
+          <h2 id="done">Congratulations on completing the Coding Quiz!</h2>
+          <p id="end-score">Your Score is:</p>
+          <p>
+            Enter Initials or Nickname
+            <input
+              id="nickname"
+              type="text"
+              placeholder="Enter Nickname or Initials"
+              onblur="getVal()"
+            />
+            <button class="button" id="submit-btn">Submit</button>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script defer src="assets/script.js"></script>
+  </body>
+</html>
