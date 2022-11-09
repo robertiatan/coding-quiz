@@ -15,7 +15,7 @@ var endScore = document.querySelector("#end-score");
 var submitBtn = document.querySelector("#submit-btn");
 var done = document.querySelector("#done");
 var hsBtn = document.querySelector("#hs-button");
-var reactButtons = document.querySelectorAll(".choices-btn");
+var choiceButtons = document.querySelectorAll(".choices-btn");
 
 // List of possible questions in order
 var questionBank = [
@@ -76,7 +76,7 @@ function startTimer() {
     totalTime.textContent = `Time Left: ${timeLeft}`;
     if (timeLeft <= 0) {
       clearInterval(timerTick);
-      totalTime.textContent = `Time Is Up!`;
+      totalTime.textContent = `Time's Up!`;
       endGame();
     } else if (questionCount >= questionBank.length + 1) {
       clearInterval(totalTime);
@@ -158,7 +158,7 @@ function saveScore() {
 startBtn.addEventListener("click", startQuiz);
 
 // Gives each question choice button functionality and triggers function to check for correctness
-reactButtons.forEach(function (click) {
+choiceButtons.forEach(function (click) {
   click.addEventListener("click", answerCheck);
 });
 
